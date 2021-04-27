@@ -1,0 +1,489 @@
+rm VGG16.txt
+rm VGG16_compressed.txt
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923.t0  --pr 0 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 --netsel 0
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 --netsel 0
+echo "" >> VGG16_compressed.txt
+echo "" >> VGG16_compressed.txt
+
+################# channel width 0.75 ##############
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.75
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.75
+echo "" >> VGG16_compressed.txt
+echo "" >> VGG16_0.75_compressed.txt
+
+
+################# channel width 0.5 ##############
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.5
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.5_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.5
+echo "" >> VGG16_compressed.txt
+echo "" >> VGG16_compressed.txt
+
+################ channel width 0.25 ##############
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 15 --aprec 9 --iwidth 6 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 14 --aprec 9 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 13 --aprec 8 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 12 --aprec 7 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 11 --aprec 6 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 10 --aprec 5 --iwidth 5 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 9 --aprec 5 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 8 --aprec 4 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008.t0  --pr 0 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_50.t0 --pr 50 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_60.t0 --pr 60 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_70.t0 --pr 70 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_80.t0 --pr 80 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_90.t0 --pr 90 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_95.t0 --pr 95 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_97.t0 --pr 97 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_98.t0 --pr 98 --netsel 0 --channelwidth 0.25
+python -W ignore main_train.py --mode 0 --fixed 1 --pprec 7 --aprec 3 --iwidth 4 --network ckpt_VGG16_0.25_20201008_pr_99.t0 --pr 99 --netsel 0 --channelwidth 0.25
+echo "" >> VGG16_compressed.txt
+echo "" >> VGG16_compressed.txt

@@ -1,0 +1,46 @@
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214.t0 --output ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pr 10
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_10.t0 --output ckpt_MobileNetV2_20201214_pr_20.t0 -r --netsel 0 --pr 20
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_20.t0 --output ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pr 30
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_30.t0 --output ckpt_MobileNetV2_20201214_pr_40.t0 -r --netsel 0 --pr 40
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_40.t0 --output ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pr 50
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_50.t0 --output ckpt_MobileNetV2_20201214_pr_60.t0 -r --netsel 0 --pr 60
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_60.t0 --output ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pr 70
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_70.t0 --output ckpt_MobileNetV2_20201214_pr_80.t0 -r --netsel 0 --pr 80
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_80.t0 --output ckpt_MobileNetV2_20201214_pr_90.t0 -r --netsel 0 --pr 90
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_20201214_pr_90.t0 --output ckpt_MobileNetV2_20201214_pr_95.t0 -r --netsel 0 --pr 95
+
+########################## channel width 0.75 ######################
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_20.t0 -r --netsel 0 --pr 20 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_20.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_40.t0 -r --netsel 0 --pr 40 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_40.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_60.t0 -r --netsel 0 --pr 60 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_60.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_80.t0 -r --netsel 0 --pr 80 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_80.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_90.t0 -r --netsel 0 --pr 90 --channelwidth 0.75
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.75_20201214_pr_90.t0 --output ckpt_MobileNetV2_0.75_20201214_pr_95.t0 -r --netsel 0 --pr 95 --channelwidth 0.75
+
+########################## channel width 0.5 ######################
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_10.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_20.t0 -r --netsel 0 --pr 20 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_20.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_30.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_40.t0 -r --netsel 0 --pr 40 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_40.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_50.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_60.t0 -r --netsel 0 --pr 60 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_60.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_70.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_80.t0 -r --netsel 0 --pr 80 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_80.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_90.t0 -r --netsel 0 --pr 90 --channelwidth 0.5
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.5_20201214_pr_90.t0 --output ckpt_MobileNetV2_0.5_20201214_pr_95.t0 -r --netsel 0 --pr 95 --channelwidth 0.5
+######################### channel width 0.25 ######################
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_10.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_20.t0 -r --netsel 0 --pr 20 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_20.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_30.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_40.t0 -r --netsel 0 --pr 40 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_40.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_50.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_60.t0 -r --netsel 0 --pr 60 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_60.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_70.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_80.t0 -r --netsel 0 --pr 80 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_80.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_90.t0 -r --netsel 0 --pr 90 --channelwidth 0.25
+python main_train.py --mode 2 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.25_20201214_pr_90.t0 --output ckpt_MobileNetV2_0.25_20201214_pr_95.t0 -r --netsel 0 --pr 95 --channelwidth 0.25
+

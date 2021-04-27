@@ -1,0 +1,56 @@
+#echo "VGG16, clean to pr 99"
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923.t0  --pr 0| grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_50.t0 --pr 50 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_60.t0 --pr 60 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_70.t0 --pr 70 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_80.t0 --pr 80 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_90.t0 --pr 90 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_95.t0 --pr 95 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_97.t0 --pr 97 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_98.t0 --pr 98 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_20200923_pr_99.t0 --pr 99 | grep ','
+
+#echo "ResNet18, clean to pr 95"
+#python -W ignore main_train.py --mode 0 --network ckpt_ResNet18_20200923.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_ResNet18_20200923_pr_50.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_ResNet18_20200923_pr_60.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_ResNet18_20200923_pr_70.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_ResNet18_20200923_pr_80.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_ResNet18_20200923_pr_90.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_ResNet18_20200923_pr_95.t0 | grep ','
+#
+#echo "SqueezeNext, clean to pr 95"
+#python -W ignore main_train.py --mode 0 --network ckpt_SqueezeNext_20200923.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_SqueezeNext_20200923_pr_50.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_SqueezeNext_20200923_pr_60.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_SqueezeNext_20200923_pr_70.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_SqueezeNext_20200923_pr_80.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_SqueezeNext_20200923_pr_90.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_SqueezeNext_20200923_pr_95.t0 | grep ','
+#
+#echo "MobileNetV2, clean to pr 95"
+#python -W ignore main_train.py --mode 0 --network ckpt_MobileNetV2_20200923.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_MobileNetV2_20200923_pr_50.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_MobileNetV2_20200923_pr_60.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_MobileNetV2_20200923_pr_70.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_MobileNetV2_20200923_pr_80.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_MobileNetV2_20200923_pr_90.t0 | grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_MobileNetV2_20200923_pr_95.t0 | grep ','
+
+################# channel width 0.75 ##############
+#echo "VGG16, clean to pr 99"
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008.t0  --pr 0| grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_50.t0 --pr 50 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_60.t0 --pr 60 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_70.t0 --pr 70 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_80.t0 --pr 80 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_90.t0 --pr 90 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_95.t0 --pr 95 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_97.t0 --pr 97 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_98.t0 --pr 98 | grep ','
+python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008_pr_99.t0 --pr 99 | grep ','
+
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.75_20201008.t0  --pr 0| grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.5_20201008.t0  --pr 0| grep ','
+#python -W ignore main_train.py --mode 0 --network ckpt_VGG16_0.25_20201008.t0  --pr 0| grep ','
+#

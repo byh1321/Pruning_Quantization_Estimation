@@ -1,0 +1,89 @@
+############################# train full size network ##################################
+#python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_VGG16_20200923.t0 --output ckpt_VGG16_20200923.t0 --netsel 0
+#python main_train.py --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_VGG16_20200923.t0 --output ckpt_VGG16_20200923.t0 -r --netsel 0
+#python main_train.py --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_VGG16_20200923.t0 --output ckpt_VGG16_20200923.t0 -r --netsel 0
+#python main_train.py --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_VGG16_20200923.t0 --output ckpt_VGG16_20200923.t0 -r --netsel 0
+#
+#python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_ResNet18_20200923.t0 --output ckpt_ResNet18_20200923.t0 --netsel 1
+#python main_train.py --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_ResNet18_20200923.t0 --output ckpt_ResNet18_20200923.t0 -r --netsel 1
+#python main_train.py --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_ResNet18_20200923.t0 --output ckpt_ResNet18_20200923.t0 -r --netsel 1
+#python main_train.py --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_ResNet18_20200923.t0 --output ckpt_ResNet18_20200923.t0 -r --netsel 1
+#
+#python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_SqueezeNext_20200923.t0 --output ckpt_SqueezeNext_20200923.t0 --netsel 2
+#python main_train.py --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_SqueezeNext_20200923.t0 --output ckpt_SqueezeNext_20200923.t0 -r --netsel 2
+#python main_train.py --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_SqueezeNext_20200923.t0 --output ckpt_SqueezeNext_20200923.t0 -r --netsel 2
+#python main_train.py --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_SqueezeNext_20200923.t0 --output ckpt_SqueezeNext_20200923.t0 -r --netsel 2
+#
+#python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_MobileNetV2_20200923.t0 --output ckpt_MobileNetV2_20200923.t0 --netsel 3
+#python main_train.py --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_MobileNetV2_20200923.t0 --output ckpt_MobileNetV2_20200923.t0 -r --netsel 3
+#python main_train.py --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_MobileNetV2_20200923.t0 --output ckpt_MobileNetV2_20200923.t0 -r --netsel 3
+#python main_train.py --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_MobileNetV2_20200923.t0 --output ckpt_MobileNetV2_20200923.t0 -r --netsel 3
+
+############################ train 0.75 channelwidth network ##################################
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_VGG16_0.75_20201008.t0 --output ckpt_VGG16_0.75_20201008.t0 --netsel 0
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_VGG16_0.75_20201008.t0 --output ckpt_VGG16_0.75_20201008.t0 -r --netsel 0
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_VGG16_0.75_20201008.t0 --output ckpt_VGG16_0.75_20201008.t0 -r --netsel 0
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_VGG16_0.75_20201008.t0 --output ckpt_VGG16_0.75_20201008.t0 -r --netsel 0
+#
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_ResNet18_0.75_20201008.t0 --output ckpt_ResNet18_0.75_20201008.t0 --netsel 1
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_ResNet18_0.75_20201008.t0 --output ckpt_ResNet18_0.75_20201008.t0 -r --netsel 1
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_ResNet18_0.75_20201008.t0 --output ckpt_ResNet18_0.75_20201008.t0 -r --netsel 1
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_ResNet18_0.75_20201008.t0 --output ckpt_ResNet18_0.75_20201008.t0 -r --netsel 1
+#
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.75_20201008.t0 --output ckpt_SqueezeNext_0.75_20201008.t0 --netsel 2
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.75_20201008.t0 --output ckpt_SqueezeNext_0.75_20201008.t0 -r --netsel 2
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.75_20201008.t0 --output ckpt_SqueezeNext_0.75_20201008.t0 -r --netsel 2
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.75_20201008.t0 --output ckpt_SqueezeNext_0.75_20201008.t0 -r --netsel 2
+#
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.75_20201008.t0 --output ckpt_MobileNetV2_0.75_20201008.t0 --netsel 3
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.75_20201008.t0 --output ckpt_MobileNetV2_0.75_20201008.t0 -r --netsel 3
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.75_20201008.t0 --output ckpt_MobileNetV2_0.75_20201008.t0 -r --netsel 3
+#python main_train.py --channelwidth 0.75 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.75_20201008.t0 --output ckpt_MobileNetV2_0.75_20201008.t0 -r --netsel 3
+
+############################# train 0.5 channelwidth network ##################################
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_VGG16_0.5_20201008.t0 --output ckpt_VGG16_0.5_20201008.t0 --netsel 0
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_VGG16_0.5_20201008.t0 --output ckpt_VGG16_0.5_20201008.t0 -r --netsel 0
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_VGG16_0.5_20201008.t0 --output ckpt_VGG16_0.5_20201008.t0 -r --netsel 0
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_VGG16_0.5_20201008.t0 --output ckpt_VGG16_0.5_20201008.t0 -r --netsel 0
+#
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_ResNet18_0.5_20201008.t0 --output ckpt_ResNet18_0.5_20201008.t0 --netsel 1
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_ResNet18_0.5_20201008.t0 --output ckpt_ResNet18_0.5_20201008.t0 -r --netsel 1
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_ResNet18_0.5_20201008.t0 --output ckpt_ResNet18_0.5_20201008.t0 -r --netsel 1
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_ResNet18_0.5_20201008.t0 --output ckpt_ResNet18_0.5_20201008.t0 -r --netsel 1
+#
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.5_20201008.t0 --output ckpt_SqueezeNext_0.5_20201008.t0 --netsel 2
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.5_20201008.t0 --output ckpt_SqueezeNext_0.5_20201008.t0 -r --netsel 2
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.5_20201008.t0 --output ckpt_SqueezeNext_0.5_20201008.t0 -r --netsel 2
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.5_20201008.t0 --output ckpt_SqueezeNext_0.5_20201008.t0 -r --netsel 2
+#
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.5_20201008.t0 --output ckpt_MobileNetV2_0.5_20201008.t0 --netsel 3
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.5_20201008.t0 --output ckpt_MobileNetV2_0.5_20201008.t0 -r --netsel 3
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.5_20201008.t0 --output ckpt_MobileNetV2_0.5_20201008.t0 -r --netsel 3
+#python main_train.py --channelwidth 0.5 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.5_20201008.t0 --output ckpt_MobileNetV2_0.5_20201008.t0 -r --netsel 3
+#
+############################# train 0.25 channelwidth network ##################################
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_VGG16_0.25_20201008.t0 --output ckpt_VGG16_0.25_20201008.t0 --netsel 0
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_VGG16_0.25_20201008.t0 --output ckpt_VGG16_0.25_20201008.t0 -r --netsel 0
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_VGG16_0.25_20201008.t0 --output ckpt_VGG16_0.25_20201008.t0 -r --netsel 0
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_VGG16_0.25_20201008.t0 --output ckpt_VGG16_0.25_20201008.t0 -r --netsel 0
+#
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_ResNet18_0.25_20201008.t0 --output ckpt_ResNet18_0.25_20201008.t0 --netsel 1
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_ResNet18_0.25_20201008.t0 --output ckpt_ResNet18_0.25_20201008.t0 -r --netsel 1
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_ResNet18_0.25_20201008.t0 --output ckpt_ResNet18_0.25_20201008.t0 -r --netsel 1
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_ResNet18_0.25_20201008.t0 --output ckpt_ResNet18_0.25_20201008.t0 -r --netsel 1
+#
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.25_20201008.t0 --output ckpt_SqueezeNext_0.25_20201008.t0 --netsel 2
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.25_20201008.t0 --output ckpt_SqueezeNext_0.25_20201008.t0 -r --netsel 2
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.25_20201008.t0 --output ckpt_SqueezeNext_0.25_20201008.t0 -r --netsel 2
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_SqueezeNext_0.25_20201008.t0 --output ckpt_SqueezeNext_0.25_20201008.t0 -r --netsel 2
+#
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.25_20201008.t0 --output ckpt_MobileNetV2_0.25_20201008.t0 --netsel 3
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.25_20201008.t0 --output ckpt_MobileNetV2_0.25_20201008.t0 -r --netsel 3
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.25_20201008.t0 --output ckpt_MobileNetV2_0.25_20201008.t0 -r --netsel 3
+#python main_train.py --channelwidth 0.25 --mode 1 --lr 0.0002 --bs 256 --ne 80 --network ckpt_MobileNetV2_0.25_20201008.t0 --output ckpt_MobileNetV2_0.25_20201008.t0 -r --netsel 3
+#
+
+python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 5 --network ckpt_VGG16_20200923.t0 --netsel 0
+python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 5 --network ckpt_ResNet18_20200923.t0 --netsel 1
+python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 5 --network ckpt_SqueezeNext_20200923.t0 --netsel 2
+python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 5 --network ckpt_MobileNetV2_20200923.t0 --netsel 3

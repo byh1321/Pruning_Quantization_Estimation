@@ -1,0 +1,1 @@
+python main_test.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0 --pprec 12 --iwidth 8 --aprec 7 --fixed 1

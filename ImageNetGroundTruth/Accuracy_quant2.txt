@@ -1,0 +1,8 @@
+Channel width, pr, bit-width, accuracy : 1, 0, 14, 68.142
+Channel width, pr, bit-width, accuracy : 1, 0, 12, 68.106
+Channel width, pr, bit-width, accuracy : 1, 0, 10, 67.866
+Channel width, pr, bit-width, accuracy : 1, 0, 8, 63.2
+Channel width, pr, bit-width, accuracy : 1, 10, 14, 68.314
+Channel width, pr, bit-width, accuracy : 1, 10, 12, 68.234
+Channel width, pr, bit-width, accuracy : 1, 10, 10, 67.882
+Channel width, pr, bit-width, accuracy : 1, 10, 8, 63.364

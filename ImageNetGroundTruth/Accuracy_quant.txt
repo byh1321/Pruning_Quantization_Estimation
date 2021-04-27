@@ -1,0 +1,15 @@
+Channel width, pr, bit-width, accuracy : 1, 0, 16, 72.586
+Channel width, pr, bit-width, accuracy : 1, 0, 14, 72.658
+Channel width, pr, bit-width, accuracy : 1, 0, 12, 72.596
+Channel width, pr, bit-width, accuracy : 1, 0, 10, 72.448
+Channel width, pr, bit-width, accuracy : 1, 0, 8, 64.932
+Channel width, pr, bit-width, accuracy : 1, 10, 16, 72.72
+Channel width, pr, bit-width, accuracy : 1, 10, 14, 72.724
+Channel width, pr, bit-width, accuracy : 1, 10, 12, 72.67
+Channel width, pr, bit-width, accuracy : 1, 10, 10, 72.324
+Channel width, pr, bit-width, accuracy : 1, 10, 8, 65.762
+Channel width, pr, bit-width, accuracy : 1, 30, 16, 72.2
+Channel width, pr, bit-width, accuracy : 1, 30, 14, 72.318
+Channel width, pr, bit-width, accuracy : 1, 30, 12, 72.048
+Channel width, pr, bit-width, accuracy : 1, 30, 10, 71.812
+Channel width, pr, bit-width, accuracy : 1, 30, 8, 67.526

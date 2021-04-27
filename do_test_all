@@ -1,0 +1,3 @@
+#source do_test_ResNet18 >> ResNet18.txt
+source do_test_MobileNetV2 >> MobileNetV2.txt
+#source do_test_SqueezeNext >> SqueezeNext.txt
