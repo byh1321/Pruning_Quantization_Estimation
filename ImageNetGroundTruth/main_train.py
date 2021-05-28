@@ -12,7 +12,6 @@ import torchvision.datasets as dset
 import torch.backends.cudnn as cudnn
 import torch.nn.functional as F
 import torchvision.transforms as transforms
-from torchsummary import summary
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
 from utils import progress_bar, AverageMeter, accuracy
@@ -33,7 +32,7 @@ parser.add_argument('--ne', default=0, type=int, help='number of epoch')
 parser.add_argument('--pr', default=0, type=int, help='pruning') # mode=1 is pruning, mode=0 is no pruning
 parser.add_argument('--bs', default=128, type=int, help='batch size')
 parser.add_argument('--mode', default=1, type=int, help='train or inference') #mode=1 is train, mode=0 is inference
-parser.add_argument('--channelwidth', default=1, type=float, help='learning rate')
+parser.add_argument('--channelwidth', default=1, type=float, help='channel width multiplier')
 parser.add_argument('--network', default='mobilenetv2-c5e733a8.pth', help='input network ckpt name', metavar="FILE")
 parser.add_argument('--netsel', type=int, default=0, help='input network ckpt name', metavar="FILE")
 parser.add_argument('--fixed', type=int, default=0, metavar='N',help='fixed=0 - floating point arithmetic')
@@ -182,7 +181,7 @@ class InvertedResidual(nn.Module):
 
 
 class MobileNetV2(nn.Module):
-    def __init__(self, num_classes=1000, width_mult=1.):
+    def __init__(self, num_classes=1000, width_mult=args.channelwidth):
         super(MobileNetV2, self).__init__()
         # setting of inverted residual blocks
         self.cfgs = [
@@ -291,7 +290,7 @@ if use_cuda:
     cudnn.benchmark = True
 
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
+optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-5)
 
 start_epoch = args.se
 num_epoch = args.ne
@@ -329,6 +328,7 @@ def train(epoch):
         loss.backward()
 
         optimizer.step()
+        utils.adjust_learning_rate(optimizer, epoch, batch_idx, len(train_loader), args.ne, args.lr)
 
         if batch_idx % 200 == 0:
             batch_time.update(time.time() - end)
@@ -399,7 +399,7 @@ def test():
             torch.save(state, './checkpoint/'+str(args.output))
             top1_acc = top1.avg
 
-def retrain(epoch):
+def retrain(net, epoch):
     batch_time = AverageMeter()
     data_time = AverageMeter()
     losses = AverageMeter()
@@ -543,18 +543,29 @@ if mode == 0: # only inference
     test()
     #summary(net, (3, 32, 32))
 
+#elif mode == 1: # mode=1 is training & inference @ each epoch
+#    for large_epoch in range(0,3):
+#        print('learning rate : ',optimizer.param_groups[0]['lr'])
+#        for epoch in range(start_epoch, start_epoch+num_epoch):
+#            print("epoch : {}".format(epoch))
+#            print(time.ctime())
+#            train(epoch)
+#            test()
+#        #optimizer.param_groups[0]['lr'] = optimizer.param_groups[0]['lr'] * 0.1
+
 elif mode == 1: # mode=1 is training & inference @ each epoch
     for epoch in range(start_epoch, start_epoch+num_epoch):
         print("epoch : {}".format(epoch))
         print(time.ctime())
         train(epoch)
-
         test()
+        print('learning rate : ',optimizer.param_groups[0]['lr'])
+
 elif mode == 2: # retrain for quantization and pruning
     for epoch in range(0,num_epoch):
         print("epoch : {}".format(epoch))
         print(time.ctime())
-        retrain(epoch) 
+        retrain(net, epoch) 
 
         test()
     f = open('Accuracy.txt','a+')

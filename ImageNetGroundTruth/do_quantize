@@ -1,183 +1,110 @@
-#training 0.875 network
-python main_train.py --channelwidth 0.875 --mode 1 --lr 0.02 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.875_20201214.t0 --output ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 3
-python main_train.py --channelwidth 0.875 --mode 1 --lr 0.002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.875_20201214.t0 --output ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 3
-python main_train.py --channelwidth 0.875 --mode 1 --lr 0.0002 --bs 256 --ne 30 --network ckpt_MobileNetV2_0.875_20201214.t0 --output ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 3
-echo "width 1, pr 0"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0
+########################### channel width 1 ######################
+#echo "width 1, pr 0"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 
 #echo "width 1, pr 10"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pr 10
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pr 10
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 10
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 10
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 10
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 10 
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_10.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 10 
 #echo "width 1, pr 30"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pr 30
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pr 30
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 30
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 30
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 30
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 30
 #python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_30.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 30
-echo "width 1, pr 50"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 50
-echo "width 1, pr 70"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 70
-echo "width 1, pr 90"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_90.t0 -r --netsel 0 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_90.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_90.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_90.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_90.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_90.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 90
+#echo "width 1, pr 50"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_50.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 50
+#echo "width 1, pr 70"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_20201214_pr_70.t0 -r --netsel 0 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 70
+
+########################### channel width 0.875 ######################
+#echo "width 0.875, pr 0"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 0 --channelwidth 0.875
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 0  --channelwidth 0.875 --pprec 14 --iwidth 6 --aprec 9 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 0  --channelwidth 0.875 --pprec 12 --iwidth 6 --aprec 7 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 0  --channelwidth 0.875 --pprec 10 --iwidth 6 --aprec 5 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 0  --channelwidth 0.875 --pprec 8 --iwidth 5 --aprec 4 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 0  --channelwidth 0.875 --pprec 6 --iwidth 4 --aprec 3 --fixed 1
+#echo "width 0.875, pr 10"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.875
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.875 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 10
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.875 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 10
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.875 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 10 
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.875 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 10 
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.875 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 10  
+echo "w-W ignore idth 0.875, pr 30"
+python -W ignore main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.875
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.875 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 30
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.875 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 30
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.875 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 30
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.875 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 30
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.875 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 30
+echo "w-W ignore idth 0.875, pr 50"
+python -W ignore main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.875
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.875 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 50
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.875 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 50
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.875 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 50
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.875 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 50
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.875 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 50
+echo "w-W ignore idth 0.875, pr 70"
+python -W ignore main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.875
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.875 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 70
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.875 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 70
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.875 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 70
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.875 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 70
+python -W ignore main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.875_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.875 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 70
 
 ########################### channel width 0.75 ######################
-echo "width 0.75, pr 0"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0 --channelwidth 0.75
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1
-echo "width 0.75, pr 10"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.75
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 10
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 10
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 10 
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 10 
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 10  
-echo "width 0.75, pr 30"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.75
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 30
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 30
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 30
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 30
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 30
-echo "width 0.75, pr 50"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.75
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 50
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 50
-echo "width 0.75, pr 70"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.75
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 70
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 70
-echo "width 0.75, pr 90"
-python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_90.t0 -r --netsel 0 --pr 90 --channelwidth 0.75
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 7 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 90
-python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 90
-#
-############################ channel width 0.5 ######################
-#echo "width 0.5, pr 0"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214.t0 -r --netsel 0 --channelwidth 0.5
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214.t0 -r --netsel 0  --channelwidth 0.5 --pprec 14 --iwidth 6 --aprec 9 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214.t0 -r --netsel 0  --channelwidth 0.5 --pprec 12 --iwidth 6 --aprec 7 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214.t0 -r --netsel 0  --channelwidth 0.5 --pprec 10 --iwidth 6 --aprec 5 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214.t0 -r --netsel 0  --channelwidth 0.5 --pprec 8 --iwidth 5 --aprec 4 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214.t0 -r --netsel 0  --channelwidth 0.5 --pprec 6 --iwidth 4 --aprec 3 --fixed 1
-#echo "width 0.5, pr 10"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.5
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.5 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 10
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.5 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 10
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.5 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 10 
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.5 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 10 
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.5 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 10  
-#echo "width 0.5, pr 30"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.5
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.5 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.5 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.5 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.5 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.5 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 30
-#echo "width 0.5, pr 50"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.5
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.5 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.5 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.5 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.5 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.5 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 50
-#echo "width 0.5, pr 70"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.5
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.5 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.5 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.5 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.5 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.5 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 70
-#echo "width 0.5, pr 90"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_90.t0 -r --netsel 0 --pr 90 --channelwidth 0.5
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.5 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.5 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.5 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.5 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.5_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.5 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 90
-#
-########################### channel width 0.25 ######################
-#echo "width 0.25, pr 0"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214.t0 -r --netsel 0 --channelwidth 0.25
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214.t0 -r --netsel 0  --channelwidth 0.25 --pprec 14 --iwidth 6 --aprec 9 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214.t0 -r --netsel 0  --channelwidth 0.25 --pprec 12 --iwidth 6 --aprec 7 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214.t0 -r --netsel 0  --channelwidth 0.25 --pprec 10 --iwidth 6 --aprec 5 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214.t0 -r --netsel 0  --channelwidth 0.25 --pprec 8 --iwidth 5 --aprec 4 --fixed 1
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214.t0 -r --netsel 0  --channelwidth 0.25 --pprec 6 --iwidth 4 --aprec 3 --fixed 1
-#echo "width 0.25, pr 10"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.25
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.25 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 10
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.25 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 10
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.25 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 10 
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.25 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 10 
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.25 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 10  
-#echo "width 0.25, pr 30"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.25
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.25 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.25 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.25 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.25 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 30
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.25 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 30
-#echo "width 0.25, pr 50"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.25
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.25 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.25 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.25 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.25 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 50
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.25 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 50
-#echo "width 0.25, pr 70"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.25
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.25 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.25 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.25 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.25 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 70
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.25 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 70
-#echo "width 0.25, pr 90"
-#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_90.t0 -r --netsel 0 --pr 90 --channelwidth 0.25
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.25 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.25 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.25 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.25 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 90
-#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.25_20201214_pr_90.t0 -r --netsel 0  --channelwidth 0.25 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 90
-#
-#
-#
-#
-#
+#echo "width 0.75, pr 0"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0 --channelwidth 0.75
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1
+#echo "width 0.75, pr 10"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0 --pr 10 --channelwidth 0.75
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 10
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 10
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 10 
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 10 
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_10.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 10  
+#echo "width 0.75, pr 30"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0 --pr 30 --channelwidth 0.75
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 30
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 30
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 30
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 30
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_30.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 30
+#echo "width 0.75, pr 50"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0 --pr 50 --channelwidth 0.75
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 50
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_50.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 50
+#echo "width 0.75, pr 70"
+#python main_quantize.py --mode 0 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0 --pr 70 --channelwidth 0.75
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 14 --iwidth 6 --aprec 9 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 12 --iwidth 6 --aprec 7 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 10 --iwidth 6 --aprec 5 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 8 --iwidth 5 --aprec 4 --fixed 1 --pr 70
+#python main_quantize.py --mode 2 --lr 0.0002 --bs 256 --network ckpt_MobileNetV2_0.75_20201214_pr_70.t0 -r --netsel 0  --channelwidth 0.75 --pprec 6 --iwidth 4 --aprec 3 --fixed 1 --pr 70

@@ -24,3 +24,15 @@ python findoptimal.py --netsel 3 --accdrop 7
 python findoptimal.py --netsel 3 --accdrop 8
 python findoptimal.py --netsel 3 --accdrop 9
 python findoptimal.py --netsel 3 --accdrop 10
+
+#pdb version
+#python -m pdb findoptimal.py --netsel 3 --accdrop 1
+#python -m pdb findoptimal.py --netsel 3 --accdrop 2
+#python -m pdb findoptimal.py --netsel 3 --accdrop 3
+#python -m pdb findoptimal.py --netsel 3 --accdrop 4
+#python -m pdb findoptimal.py --netsel 3 --accdrop 5
+#python -m pdb findoptimal.py --netsel 3 --accdrop 6
+#python -m pdb findoptimal.py --netsel 3 --accdrop 7
+#python -m pdb findoptimal.py --netsel 3 --accdrop 8
+#python -m pdb findoptimal.py --netsel 3 --accdrop 9
+#python -m pdb findoptimal.py --netsel 3 --accdrop 10

@@ -666,8 +666,24 @@ def accuracy(output, target, topk=(1,)):
 
 		res = []
 		for k in topk:
-			correct_k = correct[:k].view(-1).float().sum(0, keepdim=True)
+			correct_k = correct[:k].reshape(-1).float().sum(0, keepdim=True)
 			res.append(correct_k.mul_(100.0 / batch_size))
 		return res
 
+from math import cos, pi
+def adjust_learning_rate(optimizer, epoch, iteration, num_iter, ne, init_lr):
+    lr = optimizer.param_groups[0]['lr']
 
+    warmup_epoch = 5
+    warmup_iter = warmup_epoch * num_iter
+    current_iter = iteration + epoch * num_iter
+    max_iter = ne * num_iter
+
+    lr = init_lr * (1 + cos(pi * (current_iter - warmup_iter) / (max_iter - warmup_iter))) / 2
+
+    if epoch < warmup_epoch:
+        lr = init_lr * current_iter / warmup_iter
+
+
+    for param_group in optimizer.param_groups:
+        param_group['lr'] = lr

@@ -1,4 +1,8 @@
 ############################# train full size network ##################################
+python main_train.py --channelwidth 0.875 --mode 1 --lr 0.05 --bs 256 --ne 150 --output ckpt_MobileNetV2_0.875_20201214.t0
+#python main_train.py --channelwidth 0.875 --mode 1 --lr 0.001 --bs 256 --ne 70 --network ckpt_MobileNetV2_0.875_20201214.t0 --output ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 3
+#python main_train.py --channelwidth 0.875 --mode 1 --lr 0.0001 --bs 256 --ne 70 --network ckpt_MobileNetV2_0.875_20201214.t0 --output ckpt_MobileNetV2_0.875_20201214.t0 -r --netsel 3
+
 #python main_train.py --mode 1 --lr 0.2 --bs 256 --ne 80 --network ckpt_VGG16_20200923.t0 --output ckpt_VGG16_20200923.t0 --netsel 0
 #python main_train.py --mode 1 --lr 0.02 --bs 256 --ne 80 --network ckpt_VGG16_20200923.t0 --output ckpt_VGG16_20200923.t0 -r --netsel 0
 #python main_train.py --mode 1 --lr 0.002 --bs 256 --ne 80 --network ckpt_VGG16_20200923.t0 --output ckpt_VGG16_20200923.t0 -r --netsel 0

@@ -386,6 +386,8 @@ def test():
     #    f = open('Accuracy_prune.txt','a+')
     #    print('Channel width, pr, bit-width, accuracy : '+str(args.channelwidth)+', '+str(args.pr)+', '+str(32)+', '+str(top1.avg), file=f)
     #    f.close()
+    if args.mode == 0:
+        top1_acc = top1.avg
 
     # Save checkpoint.
     if top1.avg > top1_acc:
@@ -545,9 +547,9 @@ if mode == 0: # only inference
     test()
     f = open('Accuracy_quant.txt','a+')
     if args.fixed:
-        print('Channel width, pr, bit-width, accuracy : '+str(args.channelwidth)+', '+str(args.pr)+', '+str(args.pprec+2)+', '+str(top1_avg), file=f)
+        print('Channel width, pr, bit-width, accuracy : '+str(args.channelwidth)+', '+str(args.pr)+', '+str(args.pprec+2)+', '+str(top1_acc), file=f)
     else:
-        print('Channel width, pr, bit-width, accuracy : '+str(args.channelwidth)+', '+str(args.pr)+', '+str(32)+', '+str(top1_avg), file=f)
+        print('Channel width, pr, bit-width, accuracy : '+str(args.channelwidth)+', '+str(args.pr)+', '+str(32)+', '+str(top1_acc), file=f)
     f.close()
 elif mode == 1: # mode=1 is training & inference @ each epoch
     for epoch in range(start_epoch, start_epoch+num_epoch):

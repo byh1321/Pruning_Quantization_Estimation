@@ -39,3 +39,12 @@ Channel width, pr, accuracy : 0.25, 70, 44.578
 Channel width, pr, accuracy : 0.25, 80, 39.538
 Channel width, pr, accuracy : 0.25, 90, 29.48
 Channel width, pr, accuracy : 0.25, 95, 18.67
+Channel width, pr, accuracy : 0.875, 10, 67.982
+Channel width, pr, accuracy : 0.875, 10, 71.154
+Channel width, pr, accuracy : 0.875, 20, 71.134
+Channel width, pr, accuracy : 0.875, 30, 71.008
+Channel width, pr, accuracy : 0.875, 40, 70.722
+Channel width, pr, accuracy : 0.875, 50, 70.11
+Channel width, pr, accuracy : 0.875, 60, 68.968
+Channel width, pr, accuracy : 0.875, 70, 66.452
+Channel width, pr, accuracy : 0.875, 80, 60.934

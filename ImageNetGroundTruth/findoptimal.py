@@ -13,16 +13,20 @@ parser.add_argument('--actual', default=0, type=float, help='actual = 1, find ac
 parser.add_argument('--printprocess', default=0, type=float, help='printprocess = 1, print procedures (for debug)')
 parser.add_argument('--thres', default=1, type=float, help='allowed maximum accuracy difference between estimated acc and evaluated acc')
 parser.add_argument('--unified', default=0, type=int, help='use unified factor search')
-parser.add_argument('--ngreedy', default=5, type=int, help='number of greedy algorithm search')
+parser.add_argument('--ngreedy', default=10, type=int, help='number of greedy algorithm search')
 
 args = parser.parse_args()
 
 global performance_estimated
 performance_estimated = []
 
-acc_c = np.array([[1, 0.75, 0.5, 0.25],[1, 0.960431, 0.886839, 0.718785]]) # shape 2,4
+#acc_c = np.array([[1, 0.875, 0.75],[1, 0.976412, 0.960431]]) # shape 2,4
+#acc_q = np.array([[32, 16, 14, 12, 10, 8],[1, 0.936156191, 0.935579537, 0.935716836, 0.931240904, 0.861493259]])
+#acc_p = np.array([[0, 10, 30, 50, 70, 90],[1, 0.996567537, 0.992805558, 0.971112393, 0.908833786, 0.641678337]])
+
+acc_c = np.array([[1, 0.875, 0.75],[1, 0.976412, 0.960431]]) # shape 2,4
 acc_q = np.array([[32, 16, 14, 12, 10, 8],[1, 0.936156191, 0.935579537, 0.935716836, 0.931240904, 0.861493259]])
-acc_p = np.array([[0, 10, 30, 50, 70, 90],[1, 0.996567537, 0.992805558, 0.971112393, 0.908833786, 0.641678337]])
+acc_p = np.array([[0, 10, 30, 50, 70],[1, 0.996567537, 0.992805558, 0.971112393, 0.908833786]])
 net_acc = 72.834
 nparam_net = 3469760 
 
@@ -590,10 +594,10 @@ def acc_based_search():
 
         if (best_c_prev == best_c) and (best_q_prev == best_q) and (best_p_prev == best_p):
             break
-        else:
-            power_c, power_q, power_p = modify_power_factors(best_c, best_q, best_p)
-            best_c, best_q, best_p, best_nparam, best_acc_est = \
-                    get_best_combination_acc_based(power_c ,power_q, power_p)
+        #else:
+        #    power_c, power_q, power_p = modify_power_factors(best_c, best_q, best_p)
+        #    best_c, best_q, best_p, best_nparam, best_acc_est = \
+        #            get_best_combination_acc_based(power_c ,power_q, power_p)
 
 
     #best_c, best_q, best_p, best_acc_actual, best_nparam = \
@@ -639,4 +643,4 @@ def acc_based_search():
 
 if __name__ == '__main__':
     acc_based_search()
-    print_estimation()
+    #print_estimation()
