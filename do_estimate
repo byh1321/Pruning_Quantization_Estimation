@@ -70,103 +70,103 @@
 #done
 
 ############################ size based search #############################
-#echo "VGG16"
-#python findoptimal.py --netsel 0 --pparam 20
-#python findoptimal.py --netsel 0 --pparam 10
-#python findoptimal.py --netsel 0 --pparam 9
-#python findoptimal.py --netsel 0 --pparam 8
-#python findoptimal.py --netsel 0 --pparam 7
-#python findoptimal.py --netsel 0 --pparam 6
-#python findoptimal.py --netsel 0 --pparam 5
-#python findoptimal.py --netsel 0 --pparam 4
-#python findoptimal.py --netsel 0 --pparam 3
-#python findoptimal.py --netsel 0 --pparam 2
-#python findoptimal.py --netsel 0 --pparam 1
-#
-#echo "ResNet18"
-#python findoptimal.py --netsel 1 --pparam 20
-#python findoptimal.py --netsel 1 --pparam 10
-#python findoptimal.py --netsel 1 --pparam 9
-#python findoptimal.py --netsel 1 --pparam 8
-#python findoptimal.py --netsel 1 --pparam 7
-#python findoptimal.py --netsel 1 --pparam 6
-#python findoptimal.py --netsel 1 --pparam 5
-#python findoptimal.py --netsel 1 --pparam 4
-#python findoptimal.py --netsel 1 --pparam 3
-#python findoptimal.py --netsel 1 --pparam 2
-#python findoptimal.py --netsel 1 --pparam 1
-#
-#echo "SqueezeNext"
-#python findoptimal.py --netsel 2 --pparam 20
-#python findoptimal.py --netsel 2 --pparam 10
-#python findoptimal.py --netsel 2 --pparam 9
-#python findoptimal.py --netsel 2 --pparam 8
-#python findoptimal.py --netsel 2 --pparam 7
-#python findoptimal.py --netsel 2 --pparam 6
-#python findoptimal.py --netsel 2 --pparam 5
-#python findoptimal.py --netsel 2 --pparam 4
-#python findoptimal.py --netsel 2 --pparam 3
-#python findoptimal.py --netsel 2 --pparam 2
-#python findoptimal.py --netsel 2 --pparam 1
-#
-#echo "MobileNetV2"
-#python findoptimal.py --netsel 3 --pparam 20
-#python findoptimal.py --netsel 3 --pparam 10
-#python findoptimal.py --netsel 3 --pparam 9
-#python findoptimal.py --netsel 3 --pparam 8
-#python findoptimal.py --netsel 3 --pparam 7
-#python findoptimal.py --netsel 3 --pparam 6
-#python findoptimal.py --netsel 3 --pparam 5
-#python findoptimal.py --netsel 3 --pparam 4
-#python findoptimal.py --netsel 3 --pparam 3
-#python findoptimal.py --netsel 3 --pparam 2
-#python findoptimal.py --netsel 3 --pparam 1
+echo "VGG16"
+python findoptimal.py --netsel 0 --pparam 20
+python findoptimal.py --netsel 0 --pparam 10
+python findoptimal.py --netsel 0 --pparam 9
+python findoptimal.py --netsel 0 --pparam 8
+python findoptimal.py --netsel 0 --pparam 7
+python findoptimal.py --netsel 0 --pparam 6
+python findoptimal.py --netsel 0 --pparam 5
+python findoptimal.py --netsel 0 --pparam 4
+python findoptimal.py --netsel 0 --pparam 3
+python findoptimal.py --netsel 0 --pparam 2
+python findoptimal.py --netsel 0 --pparam 1
+
+echo "ResNet18"
+python findoptimal.py --netsel 1 --pparam 20
+python findoptimal.py --netsel 1 --pparam 10
+python findoptimal.py --netsel 1 --pparam 9
+python findoptimal.py --netsel 1 --pparam 8
+python findoptimal.py --netsel 1 --pparam 7
+python findoptimal.py --netsel 1 --pparam 6
+python findoptimal.py --netsel 1 --pparam 5
+python findoptimal.py --netsel 1 --pparam 4
+python findoptimal.py --netsel 1 --pparam 3
+python findoptimal.py --netsel 1 --pparam 2
+python findoptimal.py --netsel 1 --pparam 1
+
+echo "SqueezeNext"
+python findoptimal.py --netsel 2 --pparam 20
+python findoptimal.py --netsel 2 --pparam 10
+python findoptimal.py --netsel 2 --pparam 9
+python findoptimal.py --netsel 2 --pparam 8
+python findoptimal.py --netsel 2 --pparam 7
+python findoptimal.py --netsel 2 --pparam 6
+python findoptimal.py --netsel 2 --pparam 5
+python findoptimal.py --netsel 2 --pparam 4
+python findoptimal.py --netsel 2 --pparam 3
+python findoptimal.py --netsel 2 --pparam 2
+python findoptimal.py --netsel 2 --pparam 1
+
+echo "MobileNetV2"
+python findoptimal.py --netsel 3 --pparam 20
+python findoptimal.py --netsel 3 --pparam 10
+python findoptimal.py --netsel 3 --pparam 9
+python findoptimal.py --netsel 3 --pparam 8
+python findoptimal.py --netsel 3 --pparam 7
+python findoptimal.py --netsel 3 --pparam 6
+python findoptimal.py --netsel 3 --pparam 5
+python findoptimal.py --netsel 3 --pparam 4
+python findoptimal.py --netsel 3 --pparam 3
+python findoptimal.py --netsel 3 --pparam 2
+python findoptimal.py --netsel 3 --pparam 1
 
 ############################ acc based search #############################
 #echo "VGG16"
-python findoptimal.py --netsel 0 --accdrop 1
-python findoptimal.py --netsel 0 --accdrop 2
-python findoptimal.py --netsel 0 --accdrop 3
-python findoptimal.py --netsel 0 --accdrop 4
-python findoptimal.py --netsel 0 --accdrop 5
-python findoptimal.py --netsel 0 --accdrop 6
-python findoptimal.py --netsel 0 --accdrop 7
-python findoptimal.py --netsel 0 --accdrop 8
-python findoptimal.py --netsel 0 --accdrop 9
-python findoptimal.py --netsel 0 --accdrop 10
-
-echo "ResNet18"
-python findoptimal.py --netsel 1 --accdrop 1
-python findoptimal.py --netsel 1 --accdrop 2
-python findoptimal.py --netsel 1 --accdrop 3
-python findoptimal.py --netsel 1 --accdrop 4
-python findoptimal.py --netsel 1 --accdrop 5
-python findoptimal.py --netsel 1 --accdrop 6
-python findoptimal.py --netsel 1 --accdrop 7
-python findoptimal.py --netsel 1 --accdrop 8
-python findoptimal.py --netsel 1 --accdrop 9
-python findoptimal.py --netsel 1 --accdrop 10
-
-echo "SqueezeNext"
-python findoptimal.py --netsel 2 --accdrop 1
-python findoptimal.py --netsel 2 --accdrop 2
-python findoptimal.py --netsel 2 --accdrop 3
-python findoptimal.py --netsel 2 --accdrop 4
-python findoptimal.py --netsel 2 --accdrop 5
-python findoptimal.py --netsel 2 --accdrop 6
-python findoptimal.py --netsel 2 --accdrop 7
-python findoptimal.py --netsel 2 --accdrop 8
-python findoptimal.py --netsel 2 --accdrop 9
-python findoptimal.py --netsel 2 --accdrop 10
-
-echo "MobileNetV2"
-python findoptimal.py --netsel 3 --accdrop 1
-python findoptimal.py --netsel 3 --accdrop 2
-python findoptimal.py --netsel 3 --accdrop 3
-python findoptimal.py --netsel 3 --accdrop 4
-python findoptimal.py --netsel 3 --accdrop 5
-python findoptimal.py --netsel 3 --accdrop 6
-python findoptimal.py --netsel 3 --accdrop 7
-python findoptimal.py --netsel 3 --accdrop 8
-python findoptimal.py --netsel 3 --accdrop 9
-python findoptimal.py --netsel 3 --accdrop 10
+#python findoptimal.py --netsel 0 --accdrop 1
+#python findoptimal.py --netsel 0 --accdrop 2
+#python findoptimal.py --netsel 0 --accdrop 3
+#python findoptimal.py --netsel 0 --accdrop 4
+#python findoptimal.py --netsel 0 --accdrop 5
+#python findoptimal.py --netsel 0 --accdrop 6
+#python findoptimal.py --netsel 0 --accdrop 7
+#python findoptimal.py --netsel 0 --accdrop 8
+#python findoptimal.py --netsel 0 --accdrop 9
+#python findoptimal.py --netsel 0 --accdrop 10
+#
+#echo "ResNet18"
+#python findoptimal.py --netsel 1 --accdrop 1
+#python findoptimal.py --netsel 1 --accdrop 2
+#python findoptimal.py --netsel 1 --accdrop 3
+#python findoptimal.py --netsel 1 --accdrop 4
+#python findoptimal.py --netsel 1 --accdrop 5
+#python findoptimal.py --netsel 1 --accdrop 6
+#python findoptimal.py --netsel 1 --accdrop 7
+#python findoptimal.py --netsel 1 --accdrop 8
+#python findoptimal.py --netsel 1 --accdrop 9
+#python findoptimal.py --netsel 1 --accdrop 10
+#
+#echo "SqueezeNext"
+#python findoptimal.py --netsel 2 --accdrop 1
+#python -m pdb findoptimal.py --netsel 2 --accdrop 2
+#python findoptimal.py --netsel 2 --accdrop 3
+#python findoptimal.py --netsel 2 --accdrop 4
+#python findoptimal.py --netsel 2 --accdrop 5
+#python findoptimal.py --netsel 2 --accdrop 6
+#python findoptimal.py --netsel 2 --accdrop 7
+#python findoptimal.py --netsel 2 --accdrop 8
+#python findoptimal.py --netsel 2 --accdrop 9
+#python findoptimal.py --netsel 2 --accdrop 10
+#
+#echo "MobileNetV2"
+#python findoptimal.py --netsel 3 --accdrop 1
+#python findoptimal.py --netsel 3 --accdrop 2
+#python findoptimal.py --netsel 3 --accdrop 3
+#python findoptimal.py --netsel 3 --accdrop 4
+#python findoptimal.py --netsel 3 --accdrop 5
+#python findoptimal.py --netsel 3 --accdrop 6
+#python findoptimal.py --netsel 3 --accdrop 7
+#python findoptimal.py --netsel 3 --accdrop 8
+#python findoptimal.py --netsel 3 --accdrop 9
+#python findoptimal.py --netsel 3 --accdrop 10

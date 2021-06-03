@@ -13,7 +13,7 @@ parser.add_argument('--actual', default=0, type=float, help='actual = 1, find ac
 parser.add_argument('--printprocess', default=0, type=float, help='printprocess = 1, print procedures (for debug)')
 parser.add_argument('--thres', default=1, type=float, help='allowed maximum accuracy difference between estimated acc and evaluated acc')
 parser.add_argument('--unified', default=0, type=int, help='use unified factor search')
-parser.add_argument('--ngreedy', default=10, type=int, help='number of greedy algorithm search')
+parser.add_argument('--ngreedy', default=1, type=int, help='number of greedy algorithm search')
 
 args = parser.parse_args()
 
@@ -333,7 +333,7 @@ def greedy_search(best_c, best_q, best_p, best_acc_actual, best_nparam):
             else:
                 pass
 
-        idx = np.where(best_nparam_list == np.min(best_nparam_list))[0][0]
+        idx = np.where(best_acc_actual_list == np.max(best_acc_actual_list))[0][0]
         best_c = best_c_list[idx]
         best_q = best_q_list[idx]
         best_p = best_p_list[idx]
@@ -546,8 +546,8 @@ def acc_based_search():
             best_q = best_q_list[idx[0][0]]
             best_acc_list = best_acc_list[idx[0][0]]
             best_acc_actual = get_actual_acc(best_c, best_q, best_p)
-            #best_nparam = nparam_net * (100-best_p)/100 * best_q/32 * pow(best_c,2)
-            best_nparam = 100000000
+            best_nparam = nparam_net * (100-best_p)/100 * best_q/32 * pow(best_c,2)
+            #best_nparam = 100000000
             break
         elif counter > 5:
             best_c_list.append(best_c)

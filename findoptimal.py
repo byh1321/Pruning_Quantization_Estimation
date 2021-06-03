@@ -9,10 +9,10 @@ parser.add_argument('--pparam', default=0, type=float, help='choose percent of r
 #parser.add_argument('--powerc', default=1, type=float, help='power of degrading term for channel scaling')
 #parser.add_argument('--powerq', default=1, type=float, help='power of degrading term for quantization')
 #parser.add_argument('--powerp', default=1, type=float, help='power of degrading term for pruning')
-parser.add_argument('--actual', default=1, type=float, help='actual = 1, find actual optimal point')
+parser.add_argument('--actual', default=0, type=float, help='actual = 1, find actual optimal point')
 parser.add_argument('--printprocess', default=0, type=float, help='printprocess = 1, print procedures (for debug)')
 parser.add_argument('--thres', default=1, type=float, help='allowed maximum accuracy difference between estimated acc and evaluated acc')
-parser.add_argument('--unified', default=1, type=int, help='use unified factor search')
+parser.add_argument('--unified', default=0, type=int, help='use unified factor search')
 parser.add_argument('--ngreedy', default=10, type=int, help='number of greedy algorithm search')
 
 args = parser.parse_args()
@@ -59,15 +59,25 @@ if args.netsel == 2:
 if args.netsel == 3:
     performance = np.loadtxt('MobileNetV2.txt')
 
-def printEstimation(filename):
-    f = open(filename,'w')
-    for i in range(acc_c.shape[1]):
-        for j in range(acc_q.shape[1]):
-            for k in range(acc_p.shape[1]):
-                print(performance_estimated[i*acc_q.shape[1]*acc_p.shape[1]+j*acc_p.shape[1]+k,3], file=f, end='\t')
+def print_estimation(filename=None):
+    global performance_estimated
+    performance_estimated = np.array(performance_estimated)
+    if filename==None:
+        for i in range(acc_c.shape[1]):
+            for j in range(acc_q.shape[1]):
+                for k in range(acc_p.shape[1]):
+                    print("{:.3f}".format(performance_estimated[i*acc_q.shape[1]*acc_p.shape[1]+j*acc_p.shape[1]+k,3]), end='\t')
+                print('')
+            print('')
+    else:
+        f = open(filename,'w')
+        for i in range(acc_c.shape[1]):
+            for j in range(acc_q.shape[1]):
+                for k in range(acc_p.shape[1]):
+                    print(performance_estimated[i*acc_q.shape[1]*acc_p.shape[1]+j*acc_p.shape[1]+k,3], file=f, end='\t')
+                print('',file=f)
             print('',file=f)
-        print('',file=f)
-    f.close()
+        f.close()
     return
 
 def interpolate(optimization_type, value):
@@ -358,7 +368,7 @@ def greedy_search(best_c, best_q, best_p, best_acc_actual, best_nparam):
             else:
                 pass
 
-        idx = np.where(best_nparam_list == np.min(best_nparam_list))[0][0]
+        idx = np.where(best_acc_actual_list == np.max(best_acc_actual_list))[0][0]
         best_c = best_c_list[idx]
         best_q = best_q_list[idx]
         best_p = best_p_list[idx]
@@ -557,6 +567,7 @@ def acc_based_search():
         best_acc_actual = get_actual_acc(best_c, best_q, best_p)
         flag_acc = net_acc - args.accdrop <= best_acc_actual
         flag_error = abs(get_actual_acc(best_c, best_q, best_p) - best_acc_est) < args.thres
+
         if flag_acc and flag_error :
             break
         elif counter > 15:
@@ -579,8 +590,8 @@ def acc_based_search():
             best_q = best_q_list[idx[0][0]]
             best_acc_list = best_acc_list[idx[0][0]]
             best_acc_actual = get_actual_acc(best_c, best_q, best_p)
-            #best_nparam = nparam_net * (100-best_p)/100 * best_q/32 * pow(best_c,2)
-            best_nparam = 100000000
+            best_nparam = nparam_net * (100-best_p)/100 * best_q/32 * pow(best_c,2)
+            #best_nparam = 100000000
             break
         elif counter > 5:
             best_c_list.append(best_c)
@@ -619,9 +630,11 @@ def acc_based_search():
         best_p_prev = best_p
 
         if args.printprocess:
-            print("search "+str(i)+", best_p, best_q, best_c, best_acc_actual, best_nparam : "+str(best_p), str(best_q), str(best_c), str(best_acc_actual), str(best_nparam))
+            print("search "+str(i)+", best_p, best_q, best_c, best_acc_actual, best_nparam : "\
+                    +str(best_p), str(best_q), str(best_c), str(best_acc_actual), str(best_nparam))
 
-        best_c, best_q, best_p, best_acc_actual, best_nparam = greedy_search(best_c, best_q, best_p, get_actual_acc(best_c, best_q, best_p), best_nparam)
+        best_c, best_q, best_p, best_acc_actual, best_nparam = \
+                greedy_search(best_c, best_q, best_p, get_actual_acc(best_c, best_q, best_p), best_nparam)
 
         if (best_c_prev == best_c) and (best_q_prev == best_q) and (best_p_prev == best_p):
             break
